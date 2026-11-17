@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+############
+# Backend configuration
+############
+
+# Which file to run, in the "run" command, or the command built in the deployed Docker image
+BACKEND_RUN_FILE=backend/cmd/main.go
+
+# Which binaries to build and include in the Docker image, in addition to the main file above
+BACKEND_BUILD_FILES=()
+
+# The config file to use inside the Docker image
+BACKEND_DEPLOY_CONFIG=deploy.config.json
+
+############
+# Frontend configuration
+############
+
+# The path in which the frontend resides, in which the frontend commands will be ran
+FRONTEND_PATH=""
+
+# The command to run when running the "run" command from the Dims CLI
+# FRONTEND_RUN_COMMAND="./node_modules/.bin/vue-cli-service build"
+FRONTEND_RUN_COMMAND=""
+# FRONTEND_RUN_COMMAND="npm run watch"
+
+# The command to run to build the frontend files when building the docker image
+FRONTEND_BUILD_COMMAND=""
+
+# The paths and files to copy in the built Docker image, starting from FRONTEND_PATH.
+FRONTEND_BUILD_FILES=()

@@ -1,0 +1,7 @@
+config.json
+*.log
+deployable/
+beacon
+discovered_devices.json
+discovered_devices.json.tmp
+docs/
