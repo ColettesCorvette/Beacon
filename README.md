@@ -1,3 +1,5 @@
+![beacon](assets/banniere.png)
+
 # beacon — exporter OpenMetrics pour équipements isolés
 
 Service Go qui expose l'état d'un parc d'équipements (tourniquets, bornes)
